@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body
+    class="relative h-screen font-main font-medium text-almostBlack bg-almostWhite"
+  >
+    <!-- Header -->
+    <header
+      class="text-mediumGray p-4 flex justify-between items-center md:pt-8 lg:w-[90%] lg:mx-auto"
+    >
+      <!-- Logo -->
+      <div>
+        <img src="./images/logo.svg" />
+      </div>
+
+      <!-- Navigation Menu Desktop-->
+      <nav
+        class="nav-menu hidden md:flex md:justify-start md:ml-16 space-x-6 lg:space-x-12"
+      >
+        <div class="flex items-center space-x-2">
+          <a
+            href="#"
+            class="dropdown-trigger-desktop hover:text-almostBlack transition"
+            >Features</a
+          >
+          <button class="dropdown-btn-desktop">
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+        <!-- Dropdown Features -->
+        <div
+          class="hidden dropdown-desktop absolute top-20 p-6 space-y-3 left-[7.5rem] w-[180px] bg-white rounded-lg shadow-xl"
+        >
+          <div class="flex items-center space-x-3">
+            <img src="./images/icon-todo.svg" alt="" class="w-5" />
+            <a href="#" class="hover:text-almostBlack transition">
+              Todo list
+            </a>
+          </div>
+          <div class="flex items-center space-x-3">
+            <img src="./images/icon-calendar.svg" alt="" class="w-5" />
+            <a href="#" class="hover:text-almostBlack transition">Calender</a>
+          </div>
+          <div class="flex items-center space-x-3">
+            <img src="./images/icon-reminders.svg" alt="" class="w-5" />
+            <a href="#" class="hover:text-almostBlack transition">Reminders</a>
+          </div>
+          <div class="flex items-center space-x-3">
+            <img src="./images/icon-planning.svg" alt="" class="w-5" />
+            <a href="#" class="hover:text-almostBlack transition">Planning</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <a
+            href="#"
+            class="dropdown-trigger-desktop hover:text-almostBlack transition"
+            >Company</a
+          >
+          <button class="dropdown-btn-desktop">
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+        <!-- Dropdown Company -->
+        <div
+          class="hidden dropdown-desktop absolute top-20 p-5 space-y-3 left-[21.5rem] w-[140px] bg-white rounded-lg shadow-xl"
+        >
+          <div class="flex flex-col pl-4 space-y-4">
+            <a href="#" class="hover:text-almostBlack transition">History</a>
+            <a href="#" class="hover:text-almostBlack transition">Our Team</a>
+            <a href="#" class="hover:text-almostBlack transition">Blog</a>
+          </div>
+        </div>
+        <a href="#" class="hover:text-almostBlack transition">Careers</a>
+        <a href="#" class="hover:text-almostBlack transition">About</a>
+      </nav>
+
+      <!-- Hamburger Menu -->
+      <div class="md:hidden">
+        <button class="menu-btn">
+          <img src="./images/icon-menu.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="mobile-nav hidden p-5 absolute z-50 right-0 top-0 shadow-md min-h-screen bg-almostWhite w-2/3"
+      >
+        <button class="close-btn flex absolute right-0 top-[-5px] p-5">
+          <img src="./images/icon-close-menu.svg" alt="" />
+        </button>
+        <nav class="nav-menu flex flex-col mt-16 pl-6 space-y-6">
+          <div class="flex items-center space-x-2">
+            <a
+              href="#"
+              class="dropdown-trigger hover:text-almostBlack transition"
+              >Features</a
+            >
+            <button class="dropdown-btn">
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </button>
+          </div>
+          <!-- Dropdown Features -->
+          <div class="dropdown-mobile hidden pl-4 space-y-4">
+            <div class="flex items-center space-x-3">
+              <img src="./images/icon-todo.svg" alt="" class="w-5" />
+              <a href="#" class="hover:text-almostBlack transition">
+                Todo list
+              </a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <img src="./images/icon-calendar.svg" alt="" class="w-5" />
+              <a href="#" class="hover:text-almostBlack transition">Calender</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <img src="./images/icon-reminders.svg" alt="" class="w-5" />
+              <a href="#" class="hover:text-almostBlack transition"
+                >Reminders</a
+              >
+            </div>
+            <div class="flex items-center space-x-3">
+              <img src="./images/icon-planning.svg" alt="" class="w-5" />
+              <a href="#" class="hover:text-almostBlack transition">Planning</a>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a
+              href="#"
+              class="dropdown-trigger hover:text-almostBlack transition"
+              >Company</a
+            >
+            <button class="dropdown-btn">
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </button>
+          </div>
+          <!-- Dropdown Company -->
+          <div class="dropdown-mobile hidden">
+            <div class="flex flex-col pl-4 space-y-4">
+              <a href="#" class="hover:text-almostBlack transition">History</a>
+              <a href="#" class="hover:text-almostBlack transition">Our Team</a>
+              <a href="#" class="hover:text-almostBlack transition">Blog</a>
+            </div>
+          </div>
+          <a href="#" class="hover:text-almostBlack transition">Careers</a>
+          <a href="#" class="hover:text-almostBlack transition">About</a>
+        </nav>
+        <div class="flex flex-col mt-8 space-y-4">
+          <button class="hover:text-almostBlack transition">Login</button>
+          <button
+            class="border-[1px] border-solid border-mediumGray rounded-xl py-2 px-5 hover:text-almostBlack hover:border-almostBlack transition"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+
+      <!-- Login and Register-->
+      <div
+        class="hidden space-x-6 text-mediumGray md:flex md:flex-1 md:justify-end lg:space-x-10"
+      >
+        <button class="hover:text-almostBlack transition">Login</button>
+        <button
+          class="border-[1px] border-solid border-mediumGray rounded-xl py-2 px-5 hover:text-almostBlack hover:border-almostBlack transition"
+        >
+          Register
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="mt-6 lg:mt-12">
+      <!-- Container -->
+      <div
+        class="container mx-auto flex flex-col lg:w-[75%] md:flex-row-reverse md:items-center lg:gap-32 lg:px-6"
+      >
+        <!-- Image Div -->
+        <picture class="md:w-1/2">
+          <source
+            srcset="./images/image-hero-desktop.png"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/image-hero-mobile.png" class="md:w-[500px]" />
+        </picture>
+        <!-- Text Section -->
+        <div class="text-center mt-12 md:w-1/2 md:mt-24 lg:text-left">
+          <h1 class="font-bold text-4xl lg:text-[4.25rem] lg:leading-[4rem]">
+            Make remote work
+          </h1>
+          <p class="text-[18px] text-mediumGray my-6 lg:my-12">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a
+            href=""
+            class="text-almostWhite py-4 px-6 border-[1px] border-transparent font-bold bg-almostBlack rounded-xl hover:bg-almostWhite hover:border-almostBlack hover:text-almostBlack transition"
+            >Learn more</a
+          >
+          <!-- Images -->
+          <div
+            class="flex items-center justify-center space-x-4 mt-10 xl:mt-24 xl:space-x-8"
+          >
+            <img
+              src="./images/client-databiz.svg"
+              alt=""
+              class="w-20 xl:w-full"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt=""
+              class="w-20 xl:w-full"
+            />
+            <img src="./images/client-meet.svg" alt="" class="w-20 xl:w-full" />
+            <img
+              src="./images/client-maker.svg"
+              alt=""
+              class="w-20 xl:w-full"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="overlay hidden absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-60 backdrop-blur-[3px]"
+      ></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
