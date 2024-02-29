@@ -20,8 +20,8 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-nav-using-tailwindcss-WwEOPrDUsL)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/intro-section-with-dropdown-nav/)
 
 ## My process
 
